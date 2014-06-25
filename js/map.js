@@ -16,7 +16,7 @@ function initialize2() {
     zoom: 10,
     center: new google.maps.LatLng(-34.397, 20.644)
   };
-  map2 = new google.maps.Map(document.getElementById('map-canvas2'),
+  map2 = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 }
 
@@ -75,5 +75,5 @@ function handleNoGeolocation(errorFlag) {
 
 
 
-google.maps.event.addDomListener(window, 'load', initialize);
+//google.maps.event.addDomListener(window, 'load', initialize);
 

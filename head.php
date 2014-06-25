@@ -17,8 +17,11 @@
 		<script src="js/gnmenu.js"></script>
 		<script src="js/modernizr.custom.js"></script>
 
+		<script src="js/webspeech.js"></script>
+
   		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 		<script src="js/map.js"></script>
+		<script src="js/moon.js"></script>
   <style>
       html, body {
         height: 97%;
