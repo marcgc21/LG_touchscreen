@@ -23,7 +23,9 @@
 		<script src="js/map.js"></script>
 		<script src="js/moon.js"></script>
 
-
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
   <style>
       html, body {
         height: 97%;
