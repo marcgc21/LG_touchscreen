@@ -42,7 +42,7 @@ include 'footer.php';
 							setTimeout(function(){$self();}, 1000);
 						}
 					};
-					$http.open('GET', 'random.php' + '?' + new Date().getTime(), true);
+					$http.open('GET', 'random.php', true);
 					$http.send(null);
 				}
 
