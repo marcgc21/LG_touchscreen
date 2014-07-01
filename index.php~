@@ -11,11 +11,16 @@ include 'menu.php';
 
 	</body>
 
-<script src="js/classie.js"></script>
-		<script src="js/gnmenu.js"></script>
+
+<<<<<<< HEAD
 		<script>
 			new gnMenu( document.getElementById( 'gn-menu' ) );
 		</script>
+=======
+<?php
+include 'footer.php';
+?>
+>>>>>>> dfa90e594ea8c5aa7e9a60d10b2c7aa5dae3d04d
 
 
 </html>

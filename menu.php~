@@ -21,10 +21,15 @@
 					</nav>
 				</li>
 				<li><a href="earth.php">Earth</a></li>
-				<li><a>Moon</a></li>
+				<li><a href="moon.php">Moon</a></li>
 				<li><a>Mars</a></li>
 				<li><a href="voice.php">Voice</a></li>
 				<li><a href="secret.php"> </a></li>
+<<<<<<< HEAD
+=======
+				<li><a href="ajax.php">AJAX</a></li>
+				<li><a href="ajax_speech.php">AJAX+SPEECH</a></li>
+>>>>>>> dfa90e594ea8c5aa7e9a60d10b2c7aa5dae3d04d
 				<li><a href="index.php"><span>LG</span></a></li>
 			</ul>
 

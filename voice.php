@@ -24,7 +24,6 @@ include 'menu.php';
 
 
 if (isset($_POST)){
-	;
 	$file= fopen("/tmp/query_php.txt","w");
 	$destination=$_POST['poi'];
 	$city="search=$destination";

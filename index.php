@@ -16,5 +16,10 @@ include 'menu.php';
 			new gnMenu( document.getElementById( 'gn-menu' ) );
 		</script>
 
+<?php
+include 'footer.php';
+?>
+
+
 
 </html>

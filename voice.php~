@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Interactive Spaces - Web Speech</title>
-
-
-
-</head>
-<body>
+<?php
+include 'head.php';
+?>
+	<body>
+<?php
+include 'menu.php';
+?>	
 <h1>Interactive Spaces - Web Speech </h1>
 <div id="status">
 </div>
