@@ -85,7 +85,9 @@ reco.onEnd = function() {
 							setTimeout(function(){$self();}, 1000);
 						}
 						if ($http.responseText =='ON'){
-reco.toggleStartStop()
+
+setTimeout(Ajax, 5000);
+	reco.toggleStartStop();
 	
 						}
 					};

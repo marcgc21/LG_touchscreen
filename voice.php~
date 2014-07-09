@@ -24,7 +24,6 @@ include 'menu.php';
 
 
 if (isset($_POST)){
-	;
 	$file= fopen("/tmp/query_php.txt","w");
 	$destination=$_POST['poi'];
 	$city="search=$destination";
@@ -39,6 +38,7 @@ if (isset($_POST)){
 </html>
 
 <script>
+
 var reco = new WebSpeechRecognition();
 reco.statusText('status');
 reco.statusImage('status_img');

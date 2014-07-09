@@ -19,14 +19,13 @@
 
 		<script src="js/webspeech.js"></script>
 
+		<script src="http://ajax.googleapis.com/ajaz/libs/jquery/1.11.1/jquery.min.js"></script>
   		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 		<script src="js/map.js"></script>
 		<script src="js/moon.js"></script>
-<<<<<<< HEAD
-=======
 
+		<script src="js/galaxy_functions.js"></script>
 
->>>>>>> dfa90e594ea8c5aa7e9a60d10b2c7aa5dae3d04d
   <style>
       html, body {
         height: 97%;

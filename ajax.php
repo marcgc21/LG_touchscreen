@@ -42,7 +42,7 @@ include 'footer.php';
 							setTimeout(function(){$self();}, 1000);
 						}
 					};
-					$http.open('GET', 'naruto.txt', true);
+					$http.open('GET', 'state.txt', true);
 					$http.send(null);
 				}
 
