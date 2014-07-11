@@ -1,4 +1,4 @@
-  var moonTypeOptions = {
+var moonTypeOptions = {
     getTileUrl: function(coord, zoom) {
         var normalizedCoord = getNormalizedCoord(coord, zoom);
         if (!normalizedCoord) {
@@ -72,8 +72,8 @@
     for (var i = 0; i < locations.length; i++) {
       var landing = locations[i];
 
-  	var infowindow = new google.maps.InfoWindow({
-  		content: landing[3]
+    var infowindow = new google.maps.InfoWindow({
+      content: landing[3]
   });
 
       var myLatLng = new google.maps.LatLng(landing[1], landing[2]);
@@ -82,7 +82,7 @@
           map: map,
           title: landing[0]
       }));
-  	google.maps.event.addListener(markers[i], 'click', function(){
+    google.maps.event.addListener(markers[i], 'click', function(){
             infowindow.open(map,markers[i]);
 
     });
@@ -119,5 +119,3 @@
       y: y
     };
   }
-
-  //google.maps.event.addDomListener(window, 'load', ini_moon);
