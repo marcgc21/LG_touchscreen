@@ -20,9 +20,9 @@
 						</div><!-- /gn-scroller -->
 					</nav>
 				</li>
-				<li><a href="earth.php">Earth</a></li>
-				<li><a href="moon.php">Moon</a></li>
-				<li><a>Mars</a></li>
+				<li><a id="earth" href="earth.php">Earth</a></li>
+				<li><a id="moon" href="moon.php">Moon</a></li>
+				<li><a id="mars" href="mars.php">Mars</a></li>
 				<li><a href="voice.php">Voice</a></li>
 				<li><a href="secret.php"> </a></li>
 				<li><a href="ajax.php">AJAX</a></li>
@@ -31,3 +31,16 @@
 			</ul>
 
 		</div><!-- /container -->
+<script>
+$(document).on('click', 'a',function() {
+	//$(this).changePlanet('moon');
+	var planet = $(this).attr('id');
+	//alert(this.id);
+	changePlanet(planet);
+	$(this).slideUp();
+
+
+
+});
+
+</script>

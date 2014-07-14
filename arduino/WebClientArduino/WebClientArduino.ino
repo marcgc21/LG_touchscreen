@@ -28,7 +28,7 @@
 byte mac[] = {0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED};
 // fill in an available IP address on your network here,
 // for manual configuration:
-IPAddress ip(192,168,1,34);
+IPAddress ip(10,0,0,49);
 
 // fill in your Domain Name Server address here:
 IPAddress myDns(1,1,1,1);
@@ -36,7 +36,7 @@ IPAddress myDns(1,1,1,1);
 // initialize the library instance:
 EthernetClient client;
 
-IPAddress server(192,168,1,50);
+IPAddress server(10,0,0,50);
 //char server[] = "www.arduino.cc";
 
 unsigned long lastConnectionTime = 0;          // last time you connected to the server, in milliseconds

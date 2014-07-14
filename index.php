@@ -12,9 +12,14 @@ include 'menu.php';
 	</body>
 
 
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+
 <?php
 include 'footer.php';
 ?>
+
 
 
 </html>

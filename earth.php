@@ -4,8 +4,7 @@ include 'head.php';
 	<body onload="ini_geo()">
 <?php
 include 'menu.php';
-?>		
-
+?>	
 
  	<div id="map-canvas"></div>		
 

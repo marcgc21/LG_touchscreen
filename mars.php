@@ -1,10 +1,11 @@
 <?php
 include 'head.php';
 ?>
-	<body onload="ini_moon()">
+	<body>
 <?php
 include 'menu.php';
 ?>
+
 
  	<div id="map-canvas"></div>		
 
