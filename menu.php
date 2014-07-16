@@ -23,7 +23,7 @@
 				<li><a id="earth" href="earth.php">Earth</a></li>
 				<li><a id="moon" href="moon.php">Moon</a></li>
 				<li><a id="mars" href="mars.php">Mars</a></li>
-				<li><a href="voice.php">Voice</a></li>
+				<li><a href="voice2.php">Voice</a></li>
 				<li><a href="secret.php"> </a></li>
 				<li><a href="ajax.php">AJAX</a></li>
 				<li><a href="ajax_speech.php">AJAX+SPEECH</a></li>
