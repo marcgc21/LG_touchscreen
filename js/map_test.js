@@ -43,7 +43,6 @@ function ini_mars() {
     };
           
 
-
           
     // Display a map on the page
     map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
