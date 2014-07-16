@@ -21,8 +21,10 @@
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<script src="js/map_test.js"></script>
 		<script src="js/map.js"></script>
 		<script src="js/moon.js"></script>
+		
 
 		<script src="js/galaxy_functions.js"></script>
 
