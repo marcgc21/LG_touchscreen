@@ -11,11 +11,14 @@
 
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/component_maps.css" />
+		<link rel="stylesheet" type="text/css" href="css/component_button.css" />
+		<link rel="stylesheet" type="text/css" href="css/button.css" />
 
 		<script src="js/classie.js"></script>
 		<script src="js/gnmenu.js"></script>
-		<script src="js/modernizr.custom.js"></script>
+		<script src="jas/modernizr.custom.js"></script>
+		<!--<script src="js/modernizr.custom.js"></script>-->
 
 		<script src="js/webspeech.js"></script>
 

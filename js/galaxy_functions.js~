@@ -88,7 +88,6 @@ function xchangePlanet(planet) {
 function changePlanet(planet) {
   submitRequest('fly.php?planet=' + planet);
   showAndHideStatus();
-
 }
 
 function changeQuery(query, name) {

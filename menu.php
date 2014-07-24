@@ -12,7 +12,7 @@
 								<li><a class="gn-icon gn-icon-earth">POI</a></li>
 								<li><a class="gn-icon">Insert POI</a></li>
 								<li><a class="gn-icon">Delete POI</a></li>
-								<li><a class="gn-icon gn-icon-cog">Settings</a></li>
+								<li><a href="configuration.php" class="gn-icon gn-icon-cog">Settings</a></li>
 								<li><a class="gn-icon gn-icon-help">Help</a></li>
 								
 							

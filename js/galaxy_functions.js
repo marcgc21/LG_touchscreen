@@ -90,6 +90,12 @@ function changePlanet(planet) {
   showAndHideStatus();
 }
 
+
+function sendQuery(query) {
+  submitRequest('change.php?query=' + query);
+  showAndHideStatus();
+}
+
 function changeQuery(query, name) {
   submitRequest('change.php?query=' + query + '&name=' + name);
   showAndHideStatus();
