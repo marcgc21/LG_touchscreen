@@ -8,6 +8,7 @@
 		<meta name="description" content="Liquid Galaxy touchscreen" />
 		<meta name="keywords" content="liquid galaxy, touchscreen, voice recognition,googl, maps, earth, street view" />
 		<meta name="author" content="LiquidGalaxy" />
+		<meta name="thanks" content="By NASA [Public domain], via Wikimedia Commons" />
 
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
