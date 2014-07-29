@@ -6,12 +6,16 @@
 						<div class="gn-scroller">
 							<ul class="gn-menu">
 								<li class="gn-search-item">
-									<input placeholder="Search" type="search" class="gn-search">
-									<a class="gn-icon gn-icon-search"><span>Search</span></a>
+								<input placeholder="Search" id="searchTextField" type="search" class="gn-search">
+								<a class="gn-icon gn-icon-search"><span>Search</span></a>
 								</li>
+
+<li>
+<form action="voice.php" method="post">
+  <input name="poi" id="input_field">
+</form>
+</li>
 								<li><a class="gn-icon gn-icon-earth">POI</a></li>
-								<li><a class="gn-icon">Insert POI</a></li>
-								<li><a class="gn-icon">Delete POI</a></li>
 								<li><a href="configuration.php" class="gn-icon gn-icon-cog">Settings</a></li>
 								<li><a class="gn-icon gn-icon-help">Help</a></li>
 								
@@ -42,5 +46,15 @@ $(document).on('click', 'a',function() {
 
 
 });
+
+function initialize() {
+
+var input = document.getElementById('searchTextField');
+var autocomplete = new google.maps.places.Autocomplete(input);
+console.log(input);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
 
 </script>

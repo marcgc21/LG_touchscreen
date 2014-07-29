@@ -1,5 +1,5 @@
 <?php
-include 'head.php';
+include 'header.php';
 ?>
 	<body>
 <?php
@@ -166,16 +166,9 @@ include 'menu.php';
 </div>
 
 
+</body>
 
-
-		<script>
-		//google.maps.event.addDomListener(window, 'load', initialize2);
-			new gnMenu( document.getElementById( 'gn-menu' ) );
-
-
-
-
-		</script>
+	
 
 
 <script src="js/uiProgressButton.js"></script>
@@ -197,6 +190,10 @@ clearInterval( interval );
 } );
 } );
 </script>
+
+<?php
+include 'footer.php';
+?>	
 
 
 </html>

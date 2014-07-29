@@ -2,7 +2,7 @@
 // feature. People can enter geographical searches. The search box will return a
 // pick list containing a mix of places and predicted search terms.
 
-function initialize() {
+function map_earth() {
 
   var markers = [];
   var map = new google.maps.Map(document.getElementById('map-canvas'), {
@@ -27,6 +27,9 @@ function initialize() {
   google.maps.event.addListener(searchBox, 'places_changed', function() {
     var places = searchBox.getPlaces();
 
+    if (places.length == 0) {
+      return;
+    }
     for (var i = 0, marker; marker = markers[i]; i++) {
       marker.setMap(null);
     }
@@ -49,8 +52,9 @@ function initialize() {
         icon: image,
         title: place.name,
         position: place.geometry.location
-      });
 
+      });
+	  console.log( places[0] ); // Data returned
       markers.push(marker);
 
       bounds.extend(place.geometry.location);
@@ -66,3 +70,5 @@ function initialize() {
     searchBox.setBounds(bounds);
   });
 }
+
+//google.maps.event.addDomListener(window, 'load', initialize);

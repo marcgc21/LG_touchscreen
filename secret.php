@@ -1,20 +1,28 @@
 <?php
-include 'head.php';
+include 'header.php';
 ?>
-	<body onload="initialize2()">
+
+<script>
+function initialize() {
+
+var input = document.getElementById('searchTextField');
+var autocomplete = new google.maps.places.Autocomplete(input);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+	<body>
 <?php
 include 'menu.php';
 ?>		
 
+<input id="searchTextField" type="text" size="50">
 
- 	<div id="map-canvas"></div>		
 
 	</body>
 
-		<script>
-		//google.maps.event.addDomListener(window, 'load', initialize2);
-		new gnMenu( document.getElementById( 'gn-menu' ) );
-		</script>
+		
 
 
 </html>

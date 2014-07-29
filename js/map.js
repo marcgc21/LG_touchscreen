@@ -1,3 +1,10 @@
+$.getScript( "js/poi_moon.js", function( data, textStatus, jqxhr ) {
+  console.log( data ); // Data returned
+  console.log( textStatus ); // Success
+  console.log( jqxhr.status ); // 200
+  console.log( "Load was performed." );
+});
+
 var moonTypeOptions = {
     getTileUrl: function(coord, zoom) {
         var normalizedCoord = getNormalizedCoord(coord, zoom);

@@ -1,7 +1,7 @@
 <?php
-include 'header.php';
+include 'head.php';
 ?>
-	<body onload="map_moon()">
+	<body onload="ini_geo()">
 <?php
 include 'menu.php';
 include("db_connect.php"); 
@@ -61,9 +61,16 @@ mysql_close($link);
 </body>
 
 
-	<?php
-	include 'footer.php';
-	?>
+	<script>
+
+
+
+	gmarkers = [];
+ 	new gnMenu( document.getElementById( 'gn-menu' ) );
+	
+			
+			
+		</script>
 
 
 </html>

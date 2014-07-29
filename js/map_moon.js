@@ -1,9 +1,10 @@
-$.getScript( "ajax/test.js", function( data, textStatus, jqxhr ) {
-  console.log( data ); // Data returned
-  console.log( textStatus ); // Success
-  console.log( jqxhr.status ); // 200
-  console.log( "Load was performed." );
-});
+	$.getScript( "js/poi_moon.js", function( data, textStatus, jqxhr ) {
+	  //console.log( data ); // Data returned
+	  //console.log( textStatus ); // Success
+	 // console.log( jqxhr.status ); // 200
+	 // console.log( "Load was performed." );
+	});
+
 
 var moonTypeOptions = {
     getTileUrl: function(coord, zoom) {
@@ -31,7 +32,9 @@ gmarkers = [];
 
     //var map;
 
-    function ini_geo() {
+    function map_moon() {
+
+
     var myLatlng = new google.maps.LatLng(0, 0);
     var mapOptions = {
       center: myLatlng,
@@ -71,7 +74,31 @@ for (var i = 0; i < locations.length; i++) {
 
 
 
+ // Normalizes the coords that tiles repeat across the x axis (horizontally)
+  // like the standard Google map tiles.
+  function getNormalizedCoord(coord, zoom) {
+    var y = coord.y;
+    var x = coord.x;
 
+    // tile range in one direction range is dependent on zoom level
+    // 0 = 1 tile, 1 = 2 tiles, 2 = 4 tiles, 3 = 8 tiles, etc
+    var tileRange = 1 << zoom;
+
+    // don't repeat across y-axis (vertically)
+    if (y < 0 || y >= tileRange) {
+      return null;
+    }
+
+    // repeat across x-axis
+    if (x < 0 || x >= tileRange) {
+      x = (x % tileRange + tileRange) % tileRange;
+    }
+
+    return {
+      x: x,
+      y: y
+    };
+  }
 
 
 
