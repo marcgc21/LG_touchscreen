@@ -55,6 +55,8 @@ function map_earth() {
 
       });
 	  console.log( places[0] ); // Data returned
+	//console.log(marker.title);
+	$.get("poi.php?poi="+marker.title);
       markers.push(marker);
 
       bounds.extend(place.geometry.location);

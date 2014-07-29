@@ -1,6 +1,6 @@
 <?php
 
-$link=mysql_connect("localhost","root","simbelmyne");
+$link=mysql_connect("localhost","root","lqgalaxy");
 
 mysql_select_db("LG", $link) OR DIE ("Error: No es posible establecer la conexión");
 
